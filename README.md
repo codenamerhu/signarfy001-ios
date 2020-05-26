@@ -2,4 +2,7 @@
 Slack like Messaging app(with similar left and right menus)
 
 
-<video src="1.mp4" width="320"></video>
+<video width="320" controls>
+  <source src="screenshots/1.mp4" type="video/mp4">
+  <source src="screenshots/1.ogg" type="video/ogg">
+</video>
