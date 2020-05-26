@@ -10,7 +10,7 @@
         <!--On Boarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OnBoardingViewController" customModule="signarfy001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onB" id="BYZ-38-t0r" customClass="OnBoardingViewController" customModule="signarfy001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Fbb-oB-jiP">
-                                <rect key="frame" x="145.66666666666666" y="90" width="119.99999999999997" height="112"/>
+                                <rect key="frame" x="145.66666666666666" y="90" width="119.99999999999997" height="224"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cg0-Ku-62K">
                                 <rect key="frame" x="40" y="621" width="334" height="45"/>
@@ -126,6 +126,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MD4-jm-hWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1901" y="127"/>
+        </scene>
+        <!--Decider-->
+        <scene sceneID="3P1-b3-H5U">
+            <objects>
+                <viewController id="tSB-0N-oIV" customClass="Decider" customModule="signarfy001" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OG6-3H-Lnu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3t4-p9-Aft"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ra-Cy-Kil" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2570" y="842"/>
         </scene>
         <!--Secondary Views-->
         <scene sceneID="D4c-DL-KC0">

@@ -10,6 +10,8 @@ import UIKit
 import liquid_swipe
 
 class ColoredController: UIViewController {
+    
+    
     var viewColor: UIColor = .white {
         didSet {
             viewIfLoaded?.backgroundColor = viewColor
@@ -22,6 +24,9 @@ class ColoredController: UIViewController {
     }
 }
 class OnBoardingViewController: LiquidSwipeContainerController, LiquidSwipeContainerDataSource {
+    
+    let defaults = UserDefaults.standard
+    var window: UIWindow?
     
     var viewControllers: [UIViewController] = {
         let firstPageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "page1")
@@ -42,6 +47,9 @@ class OnBoardingViewController: LiquidSwipeContainerController, LiquidSwipeConta
     override func viewDidLoad() {
         super.viewDidLoad()
         datasource = self
+        
+        Change()
+        
     }
 
     func numberOfControllersInLiquidSwipeContainer(_ liquidSwipeContainer: LiquidSwipeContainerController) -> Int {
@@ -51,5 +59,57 @@ class OnBoardingViewController: LiquidSwipeContainerController, LiquidSwipeConta
     func liquidSwipeContainer(_ liquidSwipeContainer: LiquidSwipeContainerController, viewControllerAtIndex index: Int) -> UIViewController {
         return viewControllers[index]
     }
+    
+    
+    func Change(){
+        let is_looged_in = defaults.value(forKey: Keys.is_logged_in)
+        print(is_looged_in!)
+        print("\(String(describing: is_looged_in))")
+        if is_looged_in == nil {
+            
+        } else if is_looged_in! as! Bool == true{
+            print("in ")
+            self.window?.rootViewController = UIStoryboard(name: "App", bundle: nil).instantiateInitialViewController()
+            present(openViewController(_storyboard:"App",idName: "testpage2", vc: HomeViewController()), animated: true, completion: nil)
+        }
+    }
+    
+    
 
+}
+
+
+
+class Decider : UIViewController {
+    
+    let defaults = UserDefaults.standard
+    var window: UIWindow?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        change()
+        
+    }
+    
+    func change(){
+        let is_looged_in = defaults.value(forKey: Keys.is_logged_in)
+        print(is_looged_in!)
+        print("\(String(describing: is_looged_in))")
+        if is_looged_in == nil {
+            
+        } else if is_looged_in! as! Bool == true{
+            print("in ")
+            let vc = UIStoryboard(name:"App", bundle: nil).instantiateViewController(withIdentifier: "testpage2") as! HomeViewController
+            
+
+            //UIApplication.shared.window.first.rootViewController = vc
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.makeKeyAndVisible()
+            
+            window?.rootViewController = vc
+        } else {
+            present(openViewController(_storyboard:"Main",idName: "onB", vc: OnBoardingViewController()), animated: true, completion: nil)
+        }
+    }
 }

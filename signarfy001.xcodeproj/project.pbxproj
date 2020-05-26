@@ -10,6 +10,7 @@
 		39CF59CE2544AB99E04DF2CE /* Pods_signarfy001Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A8DE486C3B0C1DAD4A2DB /* Pods_signarfy001Tests.framework */; };
 		501205AA247303660094A0B1 /* OrganizationMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501205A9247303660094A0B1 /* OrganizationMenuViewController.swift */; };
 		501205AC247318980094A0B1 /* OrganizationListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501205AB247318980094A0B1 /* OrganizationListTableViewController.swift */; };
+		501205AF247433F70094A0B1 /* RecentsTableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501205AE247433F70094A0B1 /* RecentsTableListViewController.swift */; };
 		501A5944246B3F6500E1028F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A5943246B3F6500E1028F /* AppDelegate.swift */; };
 		501A5946246B3F6500E1028F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A5945246B3F6500E1028F /* SceneDelegate.swift */; };
 		501A5948246B3F6500E1028F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A5947246B3F6500E1028F /* ViewController.swift */; };
@@ -21,6 +22,12 @@
 		501A5969246B3F8200E1028F /* signarfy001UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A5968246B3F8200E1028F /* signarfy001UITests.swift */; };
 		501A597B246B433400E1028F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A597A246B433400E1028F /* OnBoardingViewController.swift */; };
 		501DBB2624700E1A0012F01F /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DBB2524700E1A0012F01F /* MainMenuViewController.swift */; };
+		501FFEEE2475623200B57D67 /* UIImage+gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FFEED2475623000B57D67 /* UIImage+gif.swift */; };
+		501FFEF0247562A600B57D67 /* Eclipse-1s-200px.gif in Resources */ = {isa = PBXBuildFile; fileRef = 501FFEEF2475629D00B57D67 /* Eclipse-1s-200px.gif */; };
+		501FFEF32475FD0A00B57D67 /* SplashViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FFEF22475FD0A00B57D67 /* SplashViewContoller.swift */; };
+		501FFEF52476014000B57D67 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501FFEF42476014000B57D67 /* Splash.storyboard */; };
+		5046B3462476BC4A001913EB /* AddOrganizationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046B3452476BC4A001913EB /* AddOrganizationTableViewController.swift */; };
+		5046B3482476D387001913EB /* CreateOrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046B3472476D387001913EB /* CreateOrganizationViewController.swift */; };
 		506F8F6D246F1779008A8F3F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506F8F6C246F1779008A8F3F /* HomeViewController.swift */; };
 		506F8F70246F4139008A8F3F /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506F8F6F246F4139008A8F3F /* MenuView.xib */; };
 		508A5EB8246D5EA80056C3D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508A5EB7246D5EA80056C3D5 /* LoginViewController.swift */; };
@@ -41,6 +48,7 @@
 		50987A6F246CCBFF00E4A247 /* AvenirLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50987A6C246CCBFD00E4A247 /* AvenirLTStd-Roman.otf */; };
 		50987A70246CCBFF00E4A247 /* AvenirLTStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50987A6D246CCBFF00E4A247 /* AvenirLTStd-Medium.otf */; };
 		50DCB08124718306000C76D3 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCB08024718306000C76D3 /* OptionsViewController.swift */; };
+		50F480BE2474989D00CE95D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F480BD2474989D00CE95D3 /* User.swift */; };
 		860CEE55645FB8DFFF52F02A /* Pods_signarfy001.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18006FDCF85AE5EC41AE2F80 /* Pods_signarfy001.framework */; };
 		C51F1EB8FB21D2987331E779 /* Pods_signarfy001_signarfy001UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FF3E286B7D6153C25D5237 /* Pods_signarfy001_signarfy001UITests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +75,7 @@
 		18006FDCF85AE5EC41AE2F80 /* Pods_signarfy001.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_signarfy001.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		501205A9247303660094A0B1 /* OrganizationMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationMenuViewController.swift; sourceTree = "<group>"; };
 		501205AB247318980094A0B1 /* OrganizationListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationListTableViewController.swift; sourceTree = "<group>"; };
+		501205AE247433F70094A0B1 /* RecentsTableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsTableListViewController.swift; sourceTree = "<group>"; };
 		501A5940246B3F6500E1028F /* signarfy001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = signarfy001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501A5943246B3F6500E1028F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		501A5945246B3F6500E1028F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +93,12 @@
 		501A596A246B3F8200E1028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		501A597A246B433400E1028F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		501DBB2524700E1A0012F01F /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		501FFEED2475623000B57D67 /* UIImage+gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+gif.swift"; sourceTree = "<group>"; };
+		501FFEEF2475629D00B57D67 /* Eclipse-1s-200px.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Eclipse-1s-200px.gif"; sourceTree = "<group>"; };
+		501FFEF22475FD0A00B57D67 /* SplashViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewContoller.swift; sourceTree = "<group>"; };
+		501FFEF42476014000B57D67 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		5046B3452476BC4A001913EB /* AddOrganizationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrganizationTableViewController.swift; sourceTree = "<group>"; };
+		5046B3472476D387001913EB /* CreateOrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrganizationViewController.swift; sourceTree = "<group>"; };
 		506F8F6C246F1779008A8F3F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		506F8F6F246F4139008A8F3F /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		508A5EB7246D5EA80056C3D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +119,7 @@
 		50987A6C246CCBFD00E4A247 /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Roman.otf"; sourceTree = "<group>"; };
 		50987A6D246CCBFF00E4A247 /* AvenirLTStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Medium.otf"; sourceTree = "<group>"; };
 		50DCB08024718306000C76D3 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		50F480BD2474989D00CE95D3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		703A8DE486C3B0C1DAD4A2DB /* Pods_signarfy001Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_signarfy001Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3FE9C792B6ECA567C3EACD /* Pods-signarfy001Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-signarfy001Tests.debug.xcconfig"; path = "Target Support Files/Pods-signarfy001Tests/Pods-signarfy001Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B5F1447CF8AC1A73A97C08B /* Pods-signarfy001-signarfy001UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-signarfy001-signarfy001UITests.debug.xcconfig"; path = "Target Support Files/Pods-signarfy001-signarfy001UITests/Pods-signarfy001-signarfy001UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,10 +160,19 @@
 		501205A82473033B0094A0B1 /* Orgs */ = {
 			isa = PBXGroup;
 			children = (
+				5046B3442476BC01001913EB /* Orgs add menu */,
 				501205A9247303660094A0B1 /* OrganizationMenuViewController.swift */,
 				501205AB247318980094A0B1 /* OrganizationListTableViewController.swift */,
 			);
 			path = Orgs;
+			sourceTree = "<group>";
+		};
+		501205AD247433A20094A0B1 /* Recents */ = {
+			isa = PBXGroup;
+			children = (
+				501205AE247433F70094A0B1 /* RecentsTableListViewController.swift */,
+			);
+			path = Recents;
 			sourceTree = "<group>";
 		};
 		501A5937246B3F6500E1028F = {
@@ -175,6 +200,8 @@
 		501A5942246B3F6500E1028F /* signarfy001 */ = {
 			isa = PBXGroup;
 			children = (
+				501FFEEF2475629D00B57D67 /* Eclipse-1s-200px.gif */,
+				501FFEED2475623000B57D67 /* UIImage+gif.swift */,
 				506F8F6E246F4108008A8F3F /* Elements */,
 				508A5EC3246DFD380056C3D5 /* Network */,
 				508A5EBD246D6B500056C3D5 /* Utils */,
@@ -216,6 +243,7 @@
 				501A5949246B3F6500E1028F /* Main.storyboard */,
 				50987A5E246C34E100E4A247 /* Auth.storyboard */,
 				508A5EC8246EE57E0056C3D5 /* App.storyboard */,
+				501FFEF42476014000B57D67 /* Splash.storyboard */,
 			);
 			path = storyboards;
 			sourceTree = "<group>";
@@ -223,6 +251,7 @@
 		501A5978246B42B000E1028F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				501FFEF12475FCC200B57D67 /* Splash */,
 				506F8F6B246F1742008A8F3F /* TestViewControllers */,
 				508A5ECA246EEA620056C3D5 /* App */,
 				50987A62246C5FA400E4A247 /* AuthContollers */,
@@ -239,6 +268,23 @@
 				50987A60246C5D9F00E4A247 /* SecondaryViews.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		501FFEF12475FCC200B57D67 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				501FFEF22475FD0A00B57D67 /* SplashViewContoller.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		5046B3442476BC01001913EB /* Orgs add menu */ = {
+			isa = PBXGroup;
+			children = (
+				5046B3452476BC4A001913EB /* AddOrganizationTableViewController.swift */,
+				5046B3472476D387001913EB /* CreateOrganizationViewController.swift */,
+			);
+			path = "Orgs add menu";
 			sourceTree = "<group>";
 		};
 		506F8F6B246F1742008A8F3F /* TestViewControllers */ = {
@@ -280,6 +326,7 @@
 		508A5ECA246EEA620056C3D5 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				501205AD247433A20094A0B1 /* Recents */,
 				501205A82473033B0094A0B1 /* Orgs */,
 				508A5ECB246EEA850056C3D5 /* HomeControllerView.swift */,
 			);
@@ -289,6 +336,7 @@
 		50987A62246C5FA400E4A247 /* AuthContollers */ = {
 			isa = PBXGroup;
 			children = (
+				50F480BC247496E500CE95D3 /* model */,
 				50987A63246C5FDB00E4A247 /* LogOrRegViewController.swift */,
 				508A5EB7246D5EA80056C3D5 /* LoginViewController.swift */,
 				508A5EB9246D5F120056C3D5 /* SignUpViewController.swift */,
@@ -314,6 +362,14 @@
 				50987A6C246CCBFD00E4A247 /* AvenirLTStd-Roman.otf */,
 			);
 			path = customfonts;
+			sourceTree = "<group>";
+		};
+		50F480BC247496E500CE95D3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				50F480BD2474989D00CE95D3 /* User.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		C2BC8B72B57869568992F5D6 /* Frameworks */ = {
@@ -449,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50987A5F246C34E100E4A247 /* Auth.storyboard in Resources */,
+				501FFEF0247562A600B57D67 /* Eclipse-1s-200px.gif in Resources */,
 				50987A6E246CCBFF00E4A247 /* AvenirLTStd-Book.otf in Resources */,
 				50987A6F246CCBFF00E4A247 /* AvenirLTStd-Roman.otf in Resources */,
 				501A5953246B3F8100E1028F /* LaunchScreen.storyboard in Resources */,
@@ -456,6 +513,7 @@
 				501A5950246B3F8100E1028F /* Assets.xcassets in Resources */,
 				501A594B246B3F6500E1028F /* Main.storyboard in Resources */,
 				508A5EC9246EE57F0056C3D5 /* App.storyboard in Resources */,
+				501FFEF52476014000B57D67 /* Splash.storyboard in Resources */,
 				50987A70246CCBFF00E4A247 /* AvenirLTStd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,9 +642,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501FFEEE2475623200B57D67 /* UIImage+gif.swift in Sources */,
 				508A5EBC246D5FD30056C3D5 /* OTPViewController.swift in Sources */,
+				501205AF247433F70094A0B1 /* RecentsTableListViewController.swift in Sources */,
 				501A594E246B3F6500E1028F /* signarfy001.xcdatamodeld in Sources */,
 				501205AC247318980094A0B1 /* OrganizationListTableViewController.swift in Sources */,
+				5046B3482476D387001913EB /* CreateOrganizationViewController.swift in Sources */,
+				50F480BE2474989D00CE95D3 /* User.swift in Sources */,
+				501FFEF32475FD0A00B57D67 /* SplashViewContoller.swift in Sources */,
 				50987A61246C5D9F00E4A247 /* SecondaryViews.swift in Sources */,
 				50987A69246CC6E800E4A247 /* CustomButton.swift in Sources */,
 				501A5948246B3F6500E1028F /* ViewController.swift in Sources */,
@@ -597,6 +660,7 @@
 				50DCB08124718306000C76D3 /* OptionsViewController.swift in Sources */,
 				508A5EC2246DFC6A0056C3D5 /* URLHelper.swift in Sources */,
 				508A5EC0246D6B7F0056C3D5 /* Contants.swift in Sources */,
+				5046B3462476BC4A001913EB /* AddOrganizationTableViewController.swift in Sources */,
 				50987A64246C5FDB00E4A247 /* LogOrRegViewController.swift in Sources */,
 				508A5EC5246DFDF20056C3D5 /* SIgnarfyNetworkService.swift in Sources */,
 				501A5946246B3F6500E1028F /* SceneDelegate.swift in Sources */,

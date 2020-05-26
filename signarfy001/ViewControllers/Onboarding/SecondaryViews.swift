@@ -25,9 +25,18 @@ class SecondaryViews: UIViewController {
     
     func goToLogOrReg(){
         //LogOrRegViewController.prev
+        
+        
+        present(openViewController(_storyboard:"App",idName: "testpage2", vc: HomeViewController()), animated: true, completion: nil)
+        /*
         let toLogOrReg = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginOrRegisterBoard2") as! LogOrRegViewController
         modalPresentationStyle = .fullScreen
         present(toLogOrReg, animated: true, completion: nil)
+        
+        */
+        
+        
+        
         /*
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.rootViewController = toLogOrReg

@@ -67,7 +67,6 @@
                                     <constraint firstItem="cMn-wb-nKf" firstAttribute="leading" secondItem="kZs-YR-Qpc" secondAttribute="trailing" constant="10" id="3vj-tu-51u"/>
                                     <constraint firstAttribute="width" constant="150" id="4z4-e5-dLh"/>
                                     <constraint firstItem="cMn-wb-nKf" firstAttribute="top" secondItem="kGh-mH-WbG" secondAttribute="top" constant="10" id="Gw0-vJ-7T2"/>
-                                    <constraint firstItem="TbK-TD-N17" firstAttribute="leading" secondItem="cMn-wb-nKf" secondAttribute="trailing" constant="10" id="Hng-3l-Cwo"/>
                                     <constraint firstAttribute="bottom" secondItem="TbK-TD-N17" secondAttribute="bottom" id="IfU-bV-iRT"/>
                                     <constraint firstAttribute="bottom" secondItem="cMn-wb-nKf" secondAttribute="bottom" id="MMv-aM-RSt"/>
                                     <constraint firstItem="TbK-TD-N17" firstAttribute="leading" secondItem="cMn-wb-nKf" secondAttribute="trailing" constant="10" id="a3N-gU-miq"/>
@@ -276,7 +275,7 @@
                                     <constraint firstAttribute="height" constant="45" id="DLV-Yd-2f8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ocN-Kh-fnX" customClass="CustomTextField" customModule="signarfy001" customModuleProvider="target">
                                 <rect key="frame" x="30" y="355.33333333333331" width="354" height="45"/>
@@ -284,7 +283,7 @@
                                     <constraint firstAttribute="height" constant="45" id="kS0-tf-B2S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIe-1o-zCQ" customClass="CustomTextField" customModule="signarfy001" customModuleProvider="target">
                                 <rect key="frame" x="30" y="290.33333333333331" width="354" height="45"/>
@@ -292,7 +291,7 @@
                                     <constraint firstAttribute="height" constant="45" id="ntN-wG-vLT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJk-Qn-FyS" customClass="CustomTextField" customModule="signarfy001" customModuleProvider="target">
                                 <rect key="frame" x="30" y="225.33333333333334" width="354" height="45.000000000000028"/>
@@ -300,7 +299,7 @@
                                     <constraint firstAttribute="height" constant="45" id="hrX-2S-4fd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
@@ -338,6 +337,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EEL-Gs-XWm"/>
                     </view>
+                    <connections>
+                        <outlet property="confirm_password" destination="l7f-VK-oly" id="MPh-nP-KTN"/>
+                        <outlet property="full_name" destination="dJk-Qn-FyS" id="A2A-5u-sKc"/>
+                        <outlet property="password" destination="ocN-Kh-fnX" id="DsX-FF-tCg"/>
+                        <outlet property="username" destination="ZIe-1o-zCQ" id="0VV-1N-Ttu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btS-b6-Zma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -395,6 +400,9 @@
                                     <constraint firstAttribute="height" constant="30" id="nKO-do-yB0"/>
                                 </constraints>
                                 <state key="normal" title="&gt;"/>
+                                <connections>
+                                    <action selector="sendOtp:" destination="J80-sJ-jqv" eventType="touchUpInside" id="qQJ-It-xNu"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OTP Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIW-PY-tDT" customClass="CustomTextField" customModule="signarfy001" customModuleProvider="target">
                                 <rect key="frame" x="30" y="285" width="354" height="45"/>
@@ -410,6 +418,9 @@
                                     <constraint firstAttribute="height" constant="45" id="MV8-bU-v4Z"/>
                                 </constraints>
                                 <state key="normal" title="Varify Code"/>
+                                <connections>
+                                    <action selector="verifyOtp:" destination="J80-sJ-jqv" eventType="touchUpInside" id="NXO-uK-oaY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
@@ -437,6 +448,7 @@
                     <connections>
                         <outlet property="countryCode" destination="gri-ch-k77" id="n44-EU-wkR"/>
                         <outlet property="phone" destination="LvL-Yj-PzZ" id="tbX-7u-GqU"/>
+                        <outlet property="returnedValue" destination="fIW-PY-tDT" id="TuK-Sm-yKC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p9b-xi-UeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

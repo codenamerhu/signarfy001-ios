@@ -34,9 +34,11 @@ class LogOrRegViewController: UIViewController {
     }
     
     @IBAction func openLoginController(_ sender: Any) {
+        
+        self.present(openViewController(_storyboard:"Auth",idName: "loginpage", vc: LoginViewController()), animated: true, completion: nil)
+        
         /*
-        self.present(openViewController(_storyboard:"Auth",idName: "loginpage", vc: LoginViewController()), animated: true, completion: nil)*/
-        self.present(openViewController(_storyboard:"App",idName: "testpage2", vc: HomeViewController()), animated: true, completion: nil)
+        self.present(openViewController(_storyboard:"App",idName: "testpage2", vc: HomeViewController()), animated: true, completion: nil) */
     }
     
     @IBAction func openSignUpController(_ sender: Any) {

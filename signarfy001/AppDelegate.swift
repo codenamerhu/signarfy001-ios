@@ -12,10 +12,32 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    //let defaults = UserDefaults.standard
+   // var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /*
+        let is_looged_in = defaults.value(forKey: Keys.is_logged_in)
+        print(is_looged_in!)
+        print("\(String(describing: is_looged_in))")
+        if is_looged_in == nil {
+            
+        } else if is_looged_in! as! Bool == true{
+            print("in ")
+            let vc = UIStoryboard(name:"App", bundle: nil).instantiateViewController(withIdentifier: "testpage2") as! HomeViewController
+            
+
+            //UIApplication.shared.window.first.rootViewController = vc
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.makeKeyAndVisible()
+            
+            window?.rootViewController = vc
+            
+            //present(openViewController(_storyboard:"App",idName: "testpage2", vc: HomeViewController()), animated: true, completion: nil)
+        } */
+        
         return true
     }
 

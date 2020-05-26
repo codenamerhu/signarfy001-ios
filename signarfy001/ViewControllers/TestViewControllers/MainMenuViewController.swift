@@ -97,7 +97,7 @@ extension MainMenuViewController {
             
             paginationImage.image = UIImage(named: "page1-1")
             
-             UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {self.view.layoutIfNeeded() })
+             UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {self.view.layoutIfNeeded() })
             
         } else if recentsViewPosition == 1 && menu1Active == true {
             
@@ -108,7 +108,7 @@ extension MainMenuViewController {
             menu1Active = false
             paginationImage.image = UIImage(named: "page2-1")
         }
-        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {self.view.layoutIfNeeded() })
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {self.view.layoutIfNeeded() })
     }
     
     func change2(){
@@ -126,7 +126,7 @@ extension MainMenuViewController {
             paginationImage.image = UIImage(named: "page3")
             
             
-            UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {self.recentsView.layoutIfNeeded() }, completion: { (value: Bool) in
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {self.recentsView.layoutIfNeeded() }, completion: { (value: Bool) in
                 self.recentsView.isHidden = true
                 self.rightView.isHidden = true
             })
@@ -152,7 +152,7 @@ extension MainMenuViewController {
             
             paginationImage.image = UIImage(named: "page2-1")
         }
-        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {self.view.layoutIfNeeded() })
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {self.view.layoutIfNeeded() })
     }
     
     func initializeSwipes(){

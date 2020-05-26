@@ -32,9 +32,17 @@ class HomeViewController : UIViewController {
     var menu1Active = false
     var menu2Active = false
     
+    let defaults = UserDefaults.standard
+    
     override
     func viewDidLoad() {
         super.viewDidLoad()
+        
+        //let first_name = defaults.value(forKey: Keys.first_name)!
+        let is_logged_in = defaults.value(forKey: Keys.is_logged_in)!
+        
+        //print("hello \(first_name)")
+        print("logged in? \(is_logged_in)")
         
         initializeSwipes()
         
